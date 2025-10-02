@@ -138,8 +138,8 @@ public class NumberTriangle {
             }
             if(!pre.isEmpty()){
                 for(int i=0; i<pre.size(); i++){
-                    pre.get(i).setLeft(post.get(i));
                     pre.get(i).setRight(post.get(i+1));
+                    pre.get(i).setLeft(post.get(i));
                 }
             }
             pre = post;
